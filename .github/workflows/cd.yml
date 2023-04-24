@@ -41,8 +41,8 @@ jobs:
 
       - name: Commit Kustomize
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.email "leonardo.multicloud@gmail.com"
+          git config --local user.name "Leonardo Freitas"
           git commit -a -m "Bump docker version"
 
       - name: Push
