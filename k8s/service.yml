@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name:  gitops_webservice-service
+spec:
+  selector:
+    app:  gitops_webservice
+  ports:
+  - name:  http
+    port:  8080
+    targetPort:  8080
