@@ -1,9 +1,9 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name:  gitops_webservice
+  name: gitops_webservice
   labels:
-    name:  gitops_webservice
+    name: gitops_webservice
 spec:
   strategy:
     rollingUpdate:
@@ -13,11 +13,11 @@ spec:
   template:
     metadata:
       labels:
-        name:  gitops_webservice
+        name: gitops_webservice
     spec:
       containers:
-      - image:  goserver
-        name:  gitops_webservice       
+      - image: goserver
+        name: gitops_webservice       
         ports:
         - containerPort:  8080
-          name:  gitops_webservice
+          name: gitops_webservice
