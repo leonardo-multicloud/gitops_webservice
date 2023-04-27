@@ -25,14 +25,3 @@ spec:
         ports:
         - containerPort:  8081
           name: webservice
-        readinessProbe:
-          initialDelaySeconds: 5
-          periodSeconds: 2
-          timeoutSeconds: 2
-          successThreshold: 1
-          failureThreshold: 1
-          httpGet:
-            host:
-            scheme: HTTP
-            path: /
-            port: 8081
