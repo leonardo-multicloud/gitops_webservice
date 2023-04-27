@@ -19,8 +19,9 @@ spec:
         name: webservice
     spec:
       containers:
-      - image: leonardomulticloud/gitops_webservice:5126209ab238fb19a4edff392f86ae569033b060
-        name: webservice       
+      - image: goserver
+        name: webservice      
+        imagePullPolicy: Always 
         ports:
         - containerPort:  8081
           name: webservice
