@@ -6,4 +6,4 @@ resources:
 images:
 - name: goserver
   newName: leonardomulticloud/gitops_webservice
-  newTag: 5126209ab238fb19a4edff392f86ae569033b060
+  newTag: 808ac09e66a4a4976e687358757642cfa3a710e9
