@@ -36,3 +36,10 @@ spec:
             scheme: HTTP
             path: /
             port: 8081
+        resources:
+            limits:
+              memory: 2000Mi
+              cpu: 1000m
+            requests:
+              memory: 1000Mi
+              cpu: 500m
